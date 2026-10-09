@@ -6,7 +6,7 @@ class Gcd{
     int gcdRec(int m, int n){ //재귀 구현
         int big = 0;
         int small = 0;
-        if(m>n){
+        if(m>=n){
             big = m;
             small = n;
         }else if(m<n){
@@ -22,7 +22,7 @@ class Gcd{
         int rem = 0; //나머지
         int big = 0;
         int small = 0;
-        if(m>n){
+        if(m>=n){
             big = m;
             small = n;
         }else if(m<n){
@@ -51,6 +51,6 @@ public class Homework4 {
         int result2 = gcd.gcdRep(num1,num2);
 
         System.out.println("두 수의 최대공약수는 : " + result1 + " 입니다 (재귀함수)");
-        System.out.println("두 수의 최대공약수는 : " + result1 + " 입니다 (반복문)");
+        System.out.println("두 수의 최대공약수는 : " + result2 + " 입니다 (반복문)");
     }
 }
